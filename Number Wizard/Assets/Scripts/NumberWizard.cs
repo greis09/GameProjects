@@ -3,20 +3,20 @@ using System.Collections;
 
 public class NumberWizard : MonoBehaviour {
 
-	// Use this for initialization
+	int max = 1000;
+	int min = 1;
+	int guess = 500;
+	
 	void Start () 
 	{
 		print ("Welcome to Number Wizard");
 		print ("Pick a number in your head,  but dont tell me!");
 		
-		var max = 1000;
-		var min = 1;
-		
 		print("Pick a number between "+min+" and "+max);
 		
-		print("Is the number higher or lower than 500?");
+		guessNumber();
 		print("Press Up arrow for higher, down arrow for lower and return for equal");
-			
+		max ++;	
 	}
 	
 	// Update is called once per frame
@@ -24,18 +24,26 @@ public class NumberWizard : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.UpArrow))
 		{
-			print("Up arrow pressed");
-		}
-		
-		if(Input.GetKeyDown(KeyCode.DownArrow))
+			min = guess;
+			adjustGuess();
+			guessNumber();
+		} else if(Input.GetKeyDown(KeyCode.DownArrow))
 		{
-			print("Down arrow pressed");
-		}
-		
-		if(Input.GetKeyDown(KeyCode.Return))
+			max = guess;
+			adjustGuess();
+			guessNumber();
+		} else if(Input.GetKeyDown(KeyCode.Return))
 		{
-			print("The number is 500");
+			print("I won!!");
 		}
 	
+	}
+	void adjustGuess()
+	{
+		guess = (max+min)/2;
+	}
+	void guessNumber()
+	{
+		print(string.Format("Is the number higher or lower than {0} ?",guess));
 	}
 }
