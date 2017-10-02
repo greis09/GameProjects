@@ -6,15 +6,14 @@ public class NumberWizard : MonoBehaviour {
 
 	int max = 100000;
 	int min = 1;
-	int guess = 50000;
-	int maxGuesses = 20;
+	int guess = 0;
+	int maxGuesses = 21;
 
 	public Text text;
 
 	void Start () 
 	{
-		text.text = guess.ToString();
-		max ++;	
+		adjustGuess();
 	}
 	
 	public void GuessHigher()
@@ -31,12 +30,12 @@ public class NumberWizard : MonoBehaviour {
 
 	void adjustGuess()
 	{
-		guess = (max+min)/2;
+		guess = Random.Range(min, max+1);
 		text.text = guess.ToString();
 		maxGuesses --;
 		if(maxGuesses == 0)
 		{
-			Application.LoadLevel("Win");
+			Application.LoadLevel("Lose");
 		}
 	}
 }
