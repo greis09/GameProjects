@@ -1,0 +1,33 @@
+Initialize engine version: 4.7.2f1 (a7fe7b7f3d1f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.672 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+Platform assembly: C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Projetos\GameProjects\NumberWizardUI\game_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 4.593062 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 125.
+Total: 1.280425 ms (FindLiveObjects: 0.014506 ms CreateObjectMapping: 0.006399 ms MarkObjects: 0.110933 ms  DeleteObjects: 0.002559 ms)
+
+UnloadTime: 0.298666 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 138.
+Total: 1.220692 ms (FindLiveObjects: 0.006399 ms CreateObjectMapping: 0.007253 ms MarkObjects: 0.161279 ms  DeleteObjects: 0.003839 ms)
+
